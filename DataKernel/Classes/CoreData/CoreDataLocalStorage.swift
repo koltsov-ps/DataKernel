@@ -14,8 +14,7 @@ open class CoreDataLocalStorage: Storage {
     // MARK: - Storage
     
     internal let store: StoreRef
-    internal let migration: Bool
-    
+    internal let loader: DKStoreLoader
     open var uiContext: Context!
     
     open func perform(_ ephemeral: Bool, unitOfWork: @escaping (_ context: Context, _ save: () -> Void) throws -> Void) throws {
@@ -92,7 +91,7 @@ open class CoreDataLocalStorage: Storage {
     }
     
     open func restoreStore() throws {        
-        self.persistentStore = try initializeStore(store, coordinator: self.persistentStoreCoordinator, migrate: self.migration)
+        self.persistentStore = try initializeStore(store, coordinator: self.persistentStoreCoordinator)
     }
     
     // MARK: - Props
@@ -103,14 +102,16 @@ open class CoreDataLocalStorage: Storage {
     internal var rootContext: NSManagedObjectContext! = nil
     
     // MARK: - Init
-    
-    public init(store: StoreRef, model: ModelRef, migration: Bool) throws {
+    public convenience init(store: StoreRef, model: ModelRef, migration: Bool) throws {
+        try self.init(store: store, model: model, loader: DKStandardStoreLoader(migrate: migration))
+    }
+
+    public init(store: StoreRef, model: ModelRef, loader: DKStoreLoader) throws {
         self.store = store
-        self.migration = migration
-        
+        self.loader = loader
         self.model = model.build()!
         self.persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: self.model)
-        self.persistentStore = try initializeStore(store, coordinator: self.persistentStoreCoordinator, migrate: migration)
+        self.persistentStore = try initializeStore(store, coordinator: self.persistentStoreCoordinator)
         self.rootContext = initializeContext(.coordinator(self.persistentStoreCoordinator), concurrency: .privateQueueConcurrencyType)
         self.uiContext = initializeContext(.context(self.rootContext), concurrency: .mainQueueConcurrencyType)
     }
@@ -155,10 +156,9 @@ open class CoreDataLocalStorage: Storage {
         return context
     }
     
-    fileprivate func initializeStore(_ store: StoreRef, coordinator: NSPersistentStoreCoordinator, migrate: Bool) throws -> NSPersistentStore {
+    fileprivate func initializeStore(_ store: StoreRef, coordinator: NSPersistentStoreCoordinator) throws -> NSPersistentStore {
         try checkStorePath(store)
-        let options = migrate ? OptionRef.migration : OptionRef.default
-        return try addStore(store, coordinator: coordinator, options: options.build())
+        return try addStore(store, coordinator: coordinator)
     }
 
     fileprivate func checkStorePath(_ store: StoreRef) throws {
@@ -166,13 +166,13 @@ open class CoreDataLocalStorage: Storage {
         try FileManager.default.createDirectory(at: path, withIntermediateDirectories: true, attributes: nil)
     }
 
-    fileprivate func addStore(_ store: StoreRef, coordinator: NSPersistentStoreCoordinator, options: [AnyHashable: Any], retry: Bool = true) throws -> NSPersistentStore {
+    fileprivate func addStore(_ store: StoreRef, coordinator: NSPersistentStoreCoordinator, retry: Bool = true) throws -> NSPersistentStore {
         var pstore: NSPersistentStore?
         var error: NSError?
-        
+        let loader = self.loader
         coordinator.performAndWait({
             do {
-                pstore = try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: store.location() as URL, options: options)
+                pstore = try loader.append(store: store.location() as URL, ofType: NSSQLiteStoreType, to: coordinator)
             } catch let _error as NSError {
                 error = _error
             }
@@ -182,7 +182,7 @@ open class CoreDataLocalStorage: Storage {
             let errorOnMigration = error.code == NSPersistentStoreIncompatibleVersionHashError || error.code == NSMigrationMissingSourceModelError
             if errorOnMigration && retry {
                 try cleanStoreOnFailedMigration(store)
-                return try addStore(store, coordinator: coordinator, options: options, retry: false)
+                return try addStore(store, coordinator: coordinator, retry: false)
             } else {
                 throw error
             }
@@ -201,6 +201,4 @@ open class CoreDataLocalStorage: Storage {
         try FileManager.default.removeItem(at: shmSidecar)
         try FileManager.default.removeItem(at: walSidecar)
     }
-
-
 }

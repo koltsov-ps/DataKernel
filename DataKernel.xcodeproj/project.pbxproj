@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AFF0AD21EDC30AE004A8714 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9E58C1FF815624DBA8F2 /* Model.xcdatamodeld */; };
+		8AFF0AD31EDC30B9004A8714 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA92D2C53985DAF69565A0 /* TestData.swift */; };
+		8AFF0AD41EDC30B9004A8714 /* TestModelV2ToV3Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9BDD0BBD54DE9E24505B /* TestModelV2ToV3Mapping.swift */; };
+		8AFF0AD51EDC30B9004A8714 /* DKProgressiveStoreLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA96EBD15390FD9BCD9D03 /* DKProgressiveStoreLoaderTests.swift */; };
+		8AFF0AD61EDC30B9004A8714 /* DKModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9AEF2F0376F0FA6D8577 /* DKModelsTests.swift */; };
+		8AFF0AD71EDC30BF004A8714 /* DKMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA94286DF73003A70255BB /* DKMigrationTests.swift */; };
+		8AFF0AD81EDC30BF004A8714 /* DKStoreFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA917D1C5413697A29EFC3 /* DKStoreFileTests.swift */; };
+		8AFF0AD91EDC30BF004A8714 /* FileManager+DKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA98CB6D44FF6A0288FC89 /* FileManager+DKTests.swift */; };
+		8AFF0ADA1EDC30C4004A8714 /* AnotherTestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9C7AEEC132E986272C8E /* AnotherTestModel.xcdatamodeld */; };
+		8AFF0ADB1EDC30CC004A8714 /* DKVersionFromFileNamePolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA93B04BA179457F7FB22E /* DKVersionFromFileNamePolicyTests.swift */; };
+		8AFF0AE01EDC32E8004A8714 /* AnotherModelMapping.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0ADF1EDC32E8004A8714 /* AnotherModelMapping.xcmappingmodel */; };
+		8AFF0AE11EDC3392004A8714 /* AnotherModelMapping.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0ADF1EDC32E8004A8714 /* AnotherModelMapping.xcmappingmodel */; };
+		8AFF0AE31EDC344F004A8714 /* ModelMapping.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0AE21EDC344F004A8714 /* ModelMapping.xcmappingmodel */; };
+		8AFF0AE41EDD6ED6004A8714 /* DKMigrationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA99D5EB83BC0E9015C313 /* DKMigrationError.swift */; };
+		8AFF0AE51EDD6ED6004A8714 /* DKProgressiveStoreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9AB0036EBA3C7F88DA04 /* DKProgressiveStoreLoader.swift */; };
+		8AFF0AE61EDD6ED6004A8714 /* DKModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA969BF1FDB0C4812FB0C6 /* DKModels.swift */; };
+		8AFF0AE71EDD6ED6004A8714 /* DKMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9346FEF8FCB055D4780C /* DKMigration.swift */; };
+		8AFF0AE81EDD6ED6004A8714 /* DKStoreFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA925DB1761FEA5B969535 /* DKStoreFile.swift */; };
+		8AFF0AE91EDD6ED6004A8714 /* DKVersionPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9812AEBFAC3BA2A088E0 /* DKVersionPolicy.swift */; };
+		8AFF0AEA1EDD6ED6004A8714 /* DKMigrationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA90C90848DB05D6FF4B78 /* DKMigrationFactory.swift */; };
 		945D44A71CD9012E00A47743 /* CoreDataContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D44A61CD9012E00A47743 /* CoreDataContextTests.swift */; };
 		9461A3B01CD7AA19008EEC3C /* NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461A3AF1CD7AA19008EEC3C /* NSManagedObject.swift */; };
 		9461A3B41CD7D1A0008EEC3C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9461A3B21CD7D1A0008EEC3C /* DataModel.xcdatamodeld */; };
@@ -49,6 +69,18 @@
 		94F74AAE1CD53D2D000F1F4D /* DkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F74AAD1CD53D2D000F1F4D /* DkErrors.swift */; };
 		94F74AB01CD53E33000F1F4D /* ContextRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F74AAF1CD53E33000F1F4D /* ContextRef.swift */; };
 		94F74AB21CD53F04000F1F4D /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F74AB11CD53F04000F1F4D /* NSManagedObjectContext.swift */; };
+		D9EA93F718F4B1FE60ED9ADA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9E58C1FF815624DBA8F2 /* Model.xcdatamodeld */; };
+		D9EA9435C6D9E1A95035EB40 /* DKModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA969BF1FDB0C4812FB0C6 /* DKModels.swift */; };
+		D9EA959ED577EB336DA4CD6C /* DKVersionPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9812AEBFAC3BA2A088E0 /* DKVersionPolicy.swift */; };
+		D9EA961A6EC506D5015D53DC /* DKStoreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9E28AE0E92A2032A17C6 /* DKStoreLoader.swift */; };
+		D9EA9A0FBEDF3BE12C97AA15 /* DKStandardStoreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA936F8C0B61D5936A229F /* DKStandardStoreLoader.swift */; };
+		D9EA9B02719AA217097EF74B /* DKStoreFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA925DB1761FEA5B969535 /* DKStoreFile.swift */; };
+		D9EA9B0B0E741649473CD8B3 /* DKMigrationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA90C90848DB05D6FF4B78 /* DKMigrationFactory.swift */; };
+		D9EA9B3FD126D79F83711B44 /* DKMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9346FEF8FCB055D4780C /* DKMigration.swift */; };
+		D9EA9C1CFB6F5BC5857D7FB5 /* DKStoreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9E28AE0E92A2032A17C6 /* DKStoreLoader.swift */; };
+		D9EA9C35411474B1E4C90D74 /* DKMigrationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA99D5EB83BC0E9015C313 /* DKMigrationError.swift */; };
+		D9EA9E3FFE6B2CED9CCD50A3 /* DKProgressiveStoreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9AB0036EBA3C7F88DA04 /* DKProgressiveStoreLoader.swift */; };
+		D9EA9E7F6E3C8C1C85BFE675 /* DKStandardStoreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA936F8C0B61D5936A229F /* DKStandardStoreLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +94,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8AFF0ADF1EDC32E8004A8714 /* AnotherModelMapping.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = AnotherModelMapping.xcmappingmodel; sourceTree = "<group>"; };
+		8AFF0AE21EDC344F004A8714 /* ModelMapping.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = ModelMapping.xcmappingmodel; sourceTree = "<group>"; };
 		945D44A61CD9012E00A47743 /* CoreDataContextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContextTests.swift; sourceTree = "<group>"; };
 		9461A3AF1CD7AA19008EEC3C /* NSManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObject.swift; sourceTree = "<group>"; };
 		9461A3B31CD7D1A0008EEC3C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -97,6 +131,28 @@
 		94F74AAD1CD53D2D000F1F4D /* DkErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DkErrors.swift; sourceTree = "<group>"; };
 		94F74AAF1CD53E33000F1F4D /* ContextRef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextRef.swift; sourceTree = "<group>"; };
 		94F74AB11CD53F04000F1F4D /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
+		D9EA90C90848DB05D6FF4B78 /* DKMigrationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKMigrationFactory.swift; sourceTree = "<group>"; };
+		D9EA917D1C5413697A29EFC3 /* DKStoreFileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKStoreFileTests.swift; sourceTree = "<group>"; };
+		D9EA925DB1761FEA5B969535 /* DKStoreFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKStoreFile.swift; sourceTree = "<group>"; };
+		D9EA92D2C53985DAF69565A0 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		D9EA9346FEF8FCB055D4780C /* DKMigration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKMigration.swift; sourceTree = "<group>"; };
+		D9EA936F8C0B61D5936A229F /* DKStandardStoreLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKStandardStoreLoader.swift; sourceTree = "<group>"; };
+		D9EA93B04BA179457F7FB22E /* DKVersionFromFileNamePolicyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKVersionFromFileNamePolicyTests.swift; sourceTree = "<group>"; };
+		D9EA94286DF73003A70255BB /* DKMigrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKMigrationTests.swift; sourceTree = "<group>"; };
+		D9EA969BF1FDB0C4812FB0C6 /* DKModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKModels.swift; sourceTree = "<group>"; };
+		D9EA96EBD15390FD9BCD9D03 /* DKProgressiveStoreLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKProgressiveStoreLoaderTests.swift; sourceTree = "<group>"; };
+		D9EA9812AEBFAC3BA2A088E0 /* DKVersionPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKVersionPolicy.swift; sourceTree = "<group>"; };
+		D9EA981897B6D9F2E55419F3 /* Model 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 3.xcdatamodel"; sourceTree = "<group>"; };
+		D9EA98BBBC407AEAC1BC94DA /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		D9EA98CB6D44FF6A0288FC89 /* FileManager+DKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+DKTests.swift"; sourceTree = "<group>"; };
+		D9EA99A4330322758C784868 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D9EA99D5EB83BC0E9015C313 /* DKMigrationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKMigrationError.swift; sourceTree = "<group>"; };
+		D9EA99E2FFD000179F191F13 /* AnotherTestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnotherTestModel.xcdatamodel; sourceTree = "<group>"; };
+		D9EA9A73D2D39D67BBAF51C8 /* AnotherTestModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AnotherTestModel 2.xcdatamodel"; sourceTree = "<group>"; };
+		D9EA9AB0036EBA3C7F88DA04 /* DKProgressiveStoreLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKProgressiveStoreLoader.swift; sourceTree = "<group>"; };
+		D9EA9AEF2F0376F0FA6D8577 /* DKModelsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKModelsTests.swift; sourceTree = "<group>"; };
+		D9EA9BDD0BBD54DE9E24505B /* TestModelV2ToV3Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModelV2ToV3Mapping.swift; sourceTree = "<group>"; };
+		D9EA9E28AE0E92A2032A17C6 /* DKStoreLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKStoreLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +195,7 @@
 				9461A3C41CD7D9FE008EEC3C /* CoreData */,
 				9461A3BF1CD7D365008EEC3C /* Helpers */,
 				9461A3BA1CD7D2DA008EEC3C /* Managed */,
+				D9EA948CD1F385051BEAC919 /* Migration */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -232,6 +289,7 @@
 				94F74A9D1CD52E9C000F1F4D /* CoreData */,
 				94F74A9C1CD529C5000F1F4D /* Helpers */,
 				94F74A931CD517C8000F1F4D /* Contracts */,
+				D9EA9782591E356D63B69097 /* Migration */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -244,6 +302,7 @@
 				94F74A941CD524CF000F1F4D /* Storage.swift */,
 				94F74A961CD525FC000F1F4D /* Context.swift */,
 				94F74A981CD52627000F1F4D /* Entity.swift */,
+				D9EA9E28AE0E92A2032A17C6 /* DKStoreLoader.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -262,6 +321,7 @@
 			children = (
 				94F74AA01CD52F2B000F1F4D /* Extensions */,
 				94F74A9E1CD52EB5000F1F4D /* CoreDataLocalStorage.swift */,
+				D9EA936F8C0B61D5936A229F /* DKStandardStoreLoader.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -292,6 +352,39 @@
 				94F74AAD1CD53D2D000F1F4D /* DkErrors.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		D9EA948CD1F385051BEAC919 /* Migration */ = {
+			isa = PBXGroup;
+			children = (
+				D9EA9E58C1FF815624DBA8F2 /* Model.xcdatamodeld */,
+				D9EA92D2C53985DAF69565A0 /* TestData.swift */,
+				D9EA9BDD0BBD54DE9E24505B /* TestModelV2ToV3Mapping.swift */,
+				D9EA96EBD15390FD9BCD9D03 /* DKProgressiveStoreLoaderTests.swift */,
+				D9EA9AEF2F0376F0FA6D8577 /* DKModelsTests.swift */,
+				D9EA9C7AEEC132E986272C8E /* AnotherTestModel.xcdatamodeld */,
+				D9EA94286DF73003A70255BB /* DKMigrationTests.swift */,
+				D9EA917D1C5413697A29EFC3 /* DKStoreFileTests.swift */,
+				D9EA98CB6D44FF6A0288FC89 /* FileManager+DKTests.swift */,
+				D9EA93B04BA179457F7FB22E /* DKVersionFromFileNamePolicyTests.swift */,
+				8AFF0ADF1EDC32E8004A8714 /* AnotherModelMapping.xcmappingmodel */,
+				8AFF0AE21EDC344F004A8714 /* ModelMapping.xcmappingmodel */,
+			);
+			path = Migration;
+			sourceTree = "<group>";
+		};
+		D9EA9782591E356D63B69097 /* Migration */ = {
+			isa = PBXGroup;
+			children = (
+				D9EA99D5EB83BC0E9015C313 /* DKMigrationError.swift */,
+				D9EA9AB0036EBA3C7F88DA04 /* DKProgressiveStoreLoader.swift */,
+				D9EA969BF1FDB0C4812FB0C6 /* DKModels.swift */,
+				D9EA9346FEF8FCB055D4780C /* DKMigration.swift */,
+				D9EA925DB1761FEA5B969535 /* DKStoreFile.swift */,
+				D9EA9812AEBFAC3BA2A088E0 /* DKVersionPolicy.swift */,
+				D9EA90C90848DB05D6FF4B78 /* DKMigrationFactory.swift */,
+			);
+			path = Migration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,8 +549,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFF0AE51EDD6ED6004A8714 /* DKProgressiveStoreLoader.swift in Sources */,
 				94BB39161CD9B9B0001A2DBE /* StoreRef.swift in Sources */,
+				8AFF0AEA1EDD6ED6004A8714 /* DKMigrationFactory.swift in Sources */,
 				94BB391A1CD9B9BB001A2DBE /* Storage.swift in Sources */,
+				8AFF0AE81EDD6ED6004A8714 /* DKStoreFile.swift in Sources */,
+				8AFF0AE41EDD6ED6004A8714 /* DKMigrationError.swift in Sources */,
 				94BB39191CD9B9B8001A2DBE /* ContextRef.swift in Sources */,
 				94BB39101CD9B998001A2DBE /* NSManagedObjectContext.swift in Sources */,
 				94BB39131CD9B9A5001A2DBE /* Request.swift in Sources */,
@@ -466,9 +563,14 @@
 				94BB39111CD9B99B001A2DBE /* NSManagedObject.swift in Sources */,
 				94BB39141CD9B9A7001A2DBE /* FileUtils.swift in Sources */,
 				94BB391B1CD9B9BE001A2DBE /* Context.swift in Sources */,
+				8AFF0AE91EDD6ED6004A8714 /* DKVersionPolicy.swift in Sources */,
+				8AFF0AE71EDD6ED6004A8714 /* DKMigration.swift in Sources */,
 				94BB391C1CD9B9C1001A2DBE /* Entity.swift in Sources */,
+				8AFF0AE61EDD6ED6004A8714 /* DKModels.swift in Sources */,
 				94BB39181CD9B9B5001A2DBE /* OptionRef.swift in Sources */,
 				94BB39171CD9B9B3001A2DBE /* ModelRef.swift in Sources */,
+				D9EA961A6EC506D5015D53DC /* DKStoreLoader.swift in Sources */,
+				D9EA9E7F6E3C8C1C85BFE675 /* DKStandardStoreLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +581,7 @@
 				94F74A9F1CD52EB5000F1F4D /* CoreDataLocalStorage.swift in Sources */,
 				94F74A781CD51764000F1F4D /* DataKernel.xcdatamodeld in Sources */,
 				94F74AA91CD53261000F1F4D /* ModelRef.swift in Sources */,
+				8AFF0AE11EDC3392004A8714 /* AnotherModelMapping.xcmappingmodel in Sources */,
 				94F74A951CD524CF000F1F4D /* Storage.swift in Sources */,
 				94F74AB21CD53F04000F1F4D /* NSManagedObjectContext.swift in Sources */,
 				9461A3B01CD7AA19008EEC3C /* NSManagedObject.swift in Sources */,
@@ -492,6 +595,16 @@
 				94F74A971CD525FC000F1F4D /* Context.swift in Sources */,
 				94F74A701CD51764000F1F4D /* AppDelegate.swift in Sources */,
 				94F74AA41CD5303E000F1F4D /* FileUtils.swift in Sources */,
+				D9EA9C35411474B1E4C90D74 /* DKMigrationError.swift in Sources */,
+				D9EA9E3FFE6B2CED9CCD50A3 /* DKProgressiveStoreLoader.swift in Sources */,
+				D9EA9435C6D9E1A95035EB40 /* DKModels.swift in Sources */,
+				D9EA9B3FD126D79F83711B44 /* DKMigration.swift in Sources */,
+				D9EA9B02719AA217097EF74B /* DKStoreFile.swift in Sources */,
+				D9EA959ED577EB336DA4CD6C /* DKVersionPolicy.swift in Sources */,
+				D9EA9B0B0E741649473CD8B3 /* DKMigrationFactory.swift in Sources */,
+				D9EA93F718F4B1FE60ED9ADA /* Model.xcdatamodeld in Sources */,
+				D9EA9C1CFB6F5BC5857D7FB5 /* DKStoreLoader.swift in Sources */,
+				D9EA9A0FBEDF3BE12C97AA15 /* DKStandardStoreLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,11 +614,23 @@
 			files = (
 				945D44A71CD9012E00A47743 /* CoreDataContextTests.swift in Sources */,
 				94F74A881CD51765000F1F4D /* DataKernelTests.swift in Sources */,
+				8AFF0AE31EDC344F004A8714 /* ModelMapping.xcmappingmodel in Sources */,
 				9461A3C11CD7D37D008EEC3C /* FileUtilsTests.swift in Sources */,
+				8AFF0AD41EDC30B9004A8714 /* TestModelV2ToV3Mapping.swift in Sources */,
 				9461A3BD1CD7D2DA008EEC3C /* Car+CoreDataProperties.swift in Sources */,
+				8AFF0ADB1EDC30CC004A8714 /* DKVersionFromFileNamePolicyTests.swift in Sources */,
+				8AFF0AD51EDC30B9004A8714 /* DKProgressiveStoreLoaderTests.swift in Sources */,
 				9461A3C31CD7D632008EEC3C /* RequestTests.swift in Sources */,
+				8AFF0AD21EDC30AE004A8714 /* Model.xcdatamodeld in Sources */,
 				9461A3BE1CD7D2DA008EEC3C /* Car.swift in Sources */,
+				8AFF0AD31EDC30B9004A8714 /* TestData.swift in Sources */,
+				8AFF0AE01EDC32E8004A8714 /* AnotherModelMapping.xcmappingmodel in Sources */,
+				8AFF0AD71EDC30BF004A8714 /* DKMigrationTests.swift in Sources */,
+				8AFF0AD91EDC30BF004A8714 /* FileManager+DKTests.swift in Sources */,
+				8AFF0AD61EDC30B9004A8714 /* DKModelsTests.swift in Sources */,
 				9461A3B41CD7D1A0008EEC3C /* DataModel.xcdatamodeld in Sources */,
+				8AFF0AD81EDC30BF004A8714 /* DKStoreFileTests.swift in Sources */,
+				8AFF0ADA1EDC30C4004A8714 /* AnotherTestModel.xcdatamodeld in Sources */,
 				9461A3C61CD7DA15008EEC3C /* CoreDataLocalStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -778,6 +903,29 @@
 			);
 			currentVersion = 94F74A771CD51764000F1F4D /* DataKernel.xcdatamodel */;
 			path = DataKernel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		D9EA9C7AEEC132E986272C8E /* AnotherTestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D9EA9A73D2D39D67BBAF51C8 /* AnotherTestModel 2.xcdatamodel */,
+				D9EA99E2FFD000179F191F13 /* AnotherTestModel.xcdatamodel */,
+			);
+			currentVersion = D9EA9A73D2D39D67BBAF51C8 /* AnotherTestModel 2.xcdatamodel */;
+			path = AnotherTestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		D9EA9E58C1FF815624DBA8F2 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D9EA98BBBC407AEAC1BC94DA /* Model 2.xcdatamodel */,
+				D9EA981897B6D9F2E55419F3 /* Model 3.xcdatamodel */,
+				D9EA99A4330322758C784868 /* Model.xcdatamodel */,
+			);
+			currentVersion = D9EA981897B6D9F2E55419F3 /* Model 3.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
