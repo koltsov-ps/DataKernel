@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6833B08A91941046A89D5283 /* DKContexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833BE48FE37540205529C3C /* DKContexts.swift */; };
+		6833B0D97E5CFF1E7998B87D /* DKContexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833BE48FE37540205529C3C /* DKContexts.swift */; };
+		6833B4527EB1C6B447DBA73E /* StoreContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B21056DBA7E6782DABC6 /* StoreContainer.swift */; };
+		6833B53462F8B7A14DDED5B8 /* StoreContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B21056DBA7E6782DABC6 /* StoreContainer.swift */; };
+		6833BBB1EAE2296199A1C8A3 /* DKIndependentContexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B81F9A667EB1AC21B1CA /* DKIndependentContexts.swift */; };
+		6833BFC3CF86481E556977B0 /* DKIndependentContexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B81F9A667EB1AC21B1CA /* DKIndependentContexts.swift */; };
 		8AFF0AD21EDC30AE004A8714 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9E58C1FF815624DBA8F2 /* Model.xcdatamodeld */; };
 		8AFF0AD31EDC30B9004A8714 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA92D2C53985DAF69565A0 /* TestData.swift */; };
 		8AFF0AD41EDC30B9004A8714 /* TestModelV2ToV3Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9BDD0BBD54DE9E24505B /* TestModelV2ToV3Mapping.swift */; };
@@ -94,6 +100,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6833B21056DBA7E6782DABC6 /* StoreContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreContainer.swift; sourceTree = "<group>"; };
+		6833B81F9A667EB1AC21B1CA /* DKIndependentContexts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKIndependentContexts.swift; sourceTree = "<group>"; };
+		6833BE48FE37540205529C3C /* DKContexts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKContexts.swift; sourceTree = "<group>"; };
 		8AFF0ADF1EDC32E8004A8714 /* AnotherModelMapping.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = AnotherModelMapping.xcmappingmodel; sourceTree = "<group>"; };
 		8AFF0AE21EDC344F004A8714 /* ModelMapping.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = ModelMapping.xcmappingmodel; sourceTree = "<group>"; };
 		945D44A61CD9012E00A47743 /* CoreDataContextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContextTests.swift; sourceTree = "<group>"; };
@@ -322,6 +331,9 @@
 				94F74AA01CD52F2B000F1F4D /* Extensions */,
 				94F74A9E1CD52EB5000F1F4D /* CoreDataLocalStorage.swift */,
 				D9EA936F8C0B61D5936A229F /* DKStandardStoreLoader.swift */,
+				6833B21056DBA7E6782DABC6 /* StoreContainer.swift */,
+				6833BE48FE37540205529C3C /* DKContexts.swift */,
+				6833B81F9A667EB1AC21B1CA /* DKIndependentContexts.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -571,6 +583,9 @@
 				94BB39171CD9B9B3001A2DBE /* ModelRef.swift in Sources */,
 				D9EA961A6EC506D5015D53DC /* DKStoreLoader.swift in Sources */,
 				D9EA9E7F6E3C8C1C85BFE675 /* DKStandardStoreLoader.swift in Sources */,
+				6833B53462F8B7A14DDED5B8 /* StoreContainer.swift in Sources */,
+				6833B08A91941046A89D5283 /* DKContexts.swift in Sources */,
+				6833BFC3CF86481E556977B0 /* DKIndependentContexts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +620,9 @@
 				D9EA93F718F4B1FE60ED9ADA /* Model.xcdatamodeld in Sources */,
 				D9EA9C1CFB6F5BC5857D7FB5 /* DKStoreLoader.swift in Sources */,
 				D9EA9A0FBEDF3BE12C97AA15 /* DKStandardStoreLoader.swift in Sources */,
+				6833B4527EB1C6B447DBA73E /* StoreContainer.swift in Sources */,
+				6833B0D97E5CFF1E7998B87D /* DKContexts.swift in Sources */,
+				6833BBB1EAE2296199A1C8A3 /* DKIndependentContexts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
