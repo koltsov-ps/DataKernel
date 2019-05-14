@@ -11,7 +11,7 @@ public struct DKMigrationFactory {
         var targetModel: NSManagedObjectModel? = nil
         for modelFile in modelFiles {
             guard let sourceModel = NSManagedObjectModel(contentsOf: URL(fileURLWithPath: modelFile)) else {
-                throw DKMigrationError.failedToCreateModel(file: modelFile)
+                throw DKMigrationError.modelNotFound(name: nil, file: modelFile)
             }
             if let target = targetModel {
                 let mapping = NSMappingModel(from: [models.bundle], forSourceModel: sourceModel, destinationModel: target)
@@ -27,7 +27,7 @@ public struct DKMigrationFactory {
                 }
             }
         }
-        throw DKMigrationError.failedToBuildMigrationPath
+        throw DKMigrationError.migrationPathNotFound
     }
 
     private func sortedModelFilesByVersionDesc() throws -> [String] {

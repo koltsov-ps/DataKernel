@@ -12,6 +12,6 @@ public struct DKVersionFromFileNamePolicy: DKVersionPolicy {
             let suffix = filename.substring(from: filename.index(filename.startIndex, offsetBy: prefix.count))
             return Int(suffix.trimmingCharacters(in: CharacterSet.whitespaces)) ?? 1
         }
-        throw DKMigrationError.failedToGetVersionFromFilename(filename: filename)
+        throw DKMigrationError.versionNotFound(filename: filename)
     }
 }

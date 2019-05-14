@@ -15,7 +15,7 @@ class DKProgressiveStoreLoaderTests: XCTestCase {
         let models = DKModels(name: "Model", bundle: bundle)
         
         let loader = DKProgressiveStoreLoader(models: models)
-        let coordinator = NSPersistentStoreCoordinator(managedObjectModel: models.model(name: "Model 2"))
+        let coordinator = NSPersistentStoreCoordinator(managedObjectModel: try models.model(name: "Model 2"))
         _ = try loader.append(store: dbUrl, ofType: NSSQLiteStoreType, to: coordinator)
         let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         context.persistentStoreCoordinator = coordinator
@@ -30,7 +30,7 @@ class DKProgressiveStoreLoaderTests: XCTestCase {
     func testMigrationFromV1ToV3() throws {
         let dbUrl = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("db.sqlite")
         if FileManager.default.fileExists(atPath: dbUrl.path, isDirectory: nil) {
-            try! FileManager.default.removeItem(at: dbUrl)
+            try FileManager.default.removeItem(at: dbUrl)
         }
         let bundle = Bundle(for: type(of: self))
         let models = DKModels(name: "Model", bundle: bundle)

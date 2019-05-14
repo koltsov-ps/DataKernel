@@ -48,7 +48,7 @@ public struct DKMigration {
         let migrationManager = NSMigrationManager(
                 sourceModel: from,
                 destinationModel: to)
-        try! migrationManager.migrateStore(
+        try migrationManager.migrateStore(
                 from: url,
                 sourceType: sourceStoreType,
                 options: nil,

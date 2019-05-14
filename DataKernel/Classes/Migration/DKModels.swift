@@ -18,31 +18,32 @@ public struct DKModels {
         return []
     }
 
-    public func modelFile(name: String) -> String {
+    public func modelFile(name: String) throws -> String {
         guard let file = files.first(where: {
             name == NSURL(fileURLWithPath: $0, isDirectory: false).deletingPathExtension?.lastPathComponent
         }) else {
-            fatalError("Managed Model not found for version \(name)")
+            throw DKMigrationError.modelNotFound(name: name, file: nil)
         }
         return file
     }
 
-    public func model(name: String) -> NSManagedObjectModel {
-        let file = modelFile(name: name)
-        guard let managedModel = NSManagedObjectModel(contentsOf: URL(fileURLWithPath: file)) else {
-            fatalError("Unable to create NSManagedObjectModel for \(name), file = \(file)")
-        }
+    public func model(name: String) throws -> NSManagedObjectModel {
+        let file = try modelFile(name: name)
+        guard let managedModel = NSManagedObjectModel(contentsOf: URL(fileURLWithPath: file))
+            else {
+                throw DKMigrationError.modelNotFound(name: name, file: file)
+            }
         return managedModel
     }
 
     public func currentModel() throws -> NSManagedObjectModel {
         guard let modelPath = self.bundle.path(forResource: self.name, ofType: "momd") else {
-            throw DKMigrationError.failedToCreateModel(file: nil)
+            throw DKMigrationError.modelNotFound(name: self.name, file: nil)
         }
         if let model = NSManagedObjectModel(contentsOf: URL(fileURLWithPath: modelPath)) {
             return model
         } else {
-            throw DKMigrationError.failedToCreateModel(file: modelPath)
+            throw DKMigrationError.modelNotFound(name: self.name, file: modelPath)
         }
     }
 }

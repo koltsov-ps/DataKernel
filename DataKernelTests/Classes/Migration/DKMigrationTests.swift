@@ -13,8 +13,8 @@ class DKMigrationTests: XCTestCase {
 
         try TestData().generateAnotherTestModelV1(dbUrl: dbUrl)
 
-        let fromModel = models.model(name: "AnotherTestModel")
-        let toModel = models.model(name: "AnotherTestModel 2")
+        let fromModel = try models.model(name: "AnotherTestModel")
+        let toModel = try models.model(name: "AnotherTestModel 2")
         let migration = DKMigration(
                 from: fromModel,
                 to: toModel,

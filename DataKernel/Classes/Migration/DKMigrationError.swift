@@ -1,7 +1,7 @@
 import Foundation
 
 public enum DKMigrationError: Error {
-    case failedToGetVersionFromFilename(filename: String)
-    case failedToCreateModel(file: String?)
-    case failedToBuildMigrationPath
+    case versionNotFound(filename: String)
+    case migrationPathNotFound
+    case modelNotFound(name: String?, file: String?)
 }

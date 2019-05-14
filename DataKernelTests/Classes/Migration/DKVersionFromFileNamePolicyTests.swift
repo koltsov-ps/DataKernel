@@ -8,16 +8,16 @@ class DKVersionFromFileNamePolicyTests: XCTestCase {
 
     func test() {
         XCTAssertEqual(
-                try! versionPolicy.version(modelUrl: tmpUrl.appendingPathComponent("Model 31.mom")),
+                try versionPolicy.version(modelUrl: tmpUrl.appendingPathComponent("Model 31.mom")),
                 31)
         XCTAssertEqual(
-                try! versionPolicy.version(modelUrl: tmpUrl.appendingPathComponent("Model 2.mom")),
+                try versionPolicy.version(modelUrl: tmpUrl.appendingPathComponent("Model 2.mom")),
                 2)
     }
 
     func test_defaultVersion() {
         XCTAssertEqual(
-                try! versionPolicy.version(modelUrl: tmpUrl.appendingPathComponent("Model.mom")),
+                try versionPolicy.version(modelUrl: tmpUrl.appendingPathComponent("Model.mom")),
                 1)
     }
 
@@ -25,7 +25,7 @@ class DKVersionFromFileNamePolicyTests: XCTestCase {
         do {
             let _ = try versionPolicy.version(modelUrl: tmpUrl.appendingPathComponent("AnotherTestModel 2.mom"))
             XCTFail("Must be error")
-        } catch DKMigrationError.failedToGetVersionFromFilename {
+        } catch DKMigrationError.versionNotFound {
         }
     }
 }
