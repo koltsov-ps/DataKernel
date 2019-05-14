@@ -15,7 +15,7 @@ open class DKStoreContainer {
         guard let model = NSManagedObjectModel(contentsOf: modelUrl) else {
             fatalError("Initialization of NSManagedObjectModel failed with url \(modelUrl)")
         }
-        self.init(model: model)
+        self.init(model: model, contextsFactory: DKIndependentContexts.init)
     }
 
     init(model: NSManagedObjectModel, contextsFactory: (NSPersistentStoreCoordinator) -> DKContexts) {

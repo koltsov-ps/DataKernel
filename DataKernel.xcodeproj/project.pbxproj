@@ -11,6 +11,7 @@
 		6833B0D97E5CFF1E7998B87D /* DKContexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833BE48FE37540205529C3C /* DKContexts.swift */; };
 		6833B4527EB1C6B447DBA73E /* StoreContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B21056DBA7E6782DABC6 /* StoreContainer.swift */; };
 		6833B53462F8B7A14DDED5B8 /* StoreContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B21056DBA7E6782DABC6 /* StoreContainer.swift */; };
+		6833B97414CD5E92E9B05A3C /* IndependentContextsTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B53C1FE12C74AAB978CD /* IndependentContextsTestCase.swift */; };
 		6833BBB1EAE2296199A1C8A3 /* DKIndependentContexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B81F9A667EB1AC21B1CA /* DKIndependentContexts.swift */; };
 		6833BFC3CF86481E556977B0 /* DKIndependentContexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B81F9A667EB1AC21B1CA /* DKIndependentContexts.swift */; };
 		8AFF0AD21EDC30AE004A8714 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9EA9E58C1FF815624DBA8F2 /* Model.xcdatamodeld */; };
@@ -101,6 +102,7 @@
 
 /* Begin PBXFileReference section */
 		6833B21056DBA7E6782DABC6 /* StoreContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreContainer.swift; sourceTree = "<group>"; };
+		6833B53C1FE12C74AAB978CD /* IndependentContextsTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndependentContextsTestCase.swift; sourceTree = "<group>"; };
 		6833B81F9A667EB1AC21B1CA /* DKIndependentContexts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKIndependentContexts.swift; sourceTree = "<group>"; };
 		6833BE48FE37540205529C3C /* DKContexts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKContexts.swift; sourceTree = "<group>"; };
 		8AFF0ADF1EDC32E8004A8714 /* AnotherModelMapping.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = AnotherModelMapping.xcmappingmodel; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			children = (
 				9461A3C51CD7DA15008EEC3C /* CoreDataLocalStoreTests.swift */,
 				945D44A61CD9012E00A47743 /* CoreDataContextTests.swift */,
+				6833B53C1FE12C74AAB978CD /* IndependentContextsTestCase.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -650,6 +653,7 @@
 				8AFF0AD81EDC30BF004A8714 /* DKStoreFileTests.swift in Sources */,
 				8AFF0ADA1EDC30C4004A8714 /* AnotherTestModel.xcdatamodeld in Sources */,
 				9461A3C61CD7DA15008EEC3C /* CoreDataLocalStoreTests.swift in Sources */,
+				6833B97414CD5E92E9B05A3C /* IndependentContextsTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
