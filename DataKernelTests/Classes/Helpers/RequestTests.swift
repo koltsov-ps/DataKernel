@@ -41,8 +41,8 @@ class RequestTests: XCTestCase {
     }
     
     func testRequestSortWithKeyAndAscendingAndComparator() {
-        let descriptor = NSSortDescriptor(key: "model", ascending: true, comparator: { _ in return ComparisonResult.orderedSame })
-        let request: Request<Car> = Request().sort("model", ascending: true, comparator: { _ in return ComparisonResult.orderedSame })
+        let descriptor = NSSortDescriptor(key: "model", ascending: true, comparator: { _, _ in return ComparisonResult.orderedSame })
+        let request: Request<Car> = Request().sort("model", ascending: true, comparator: { _, _ in return ComparisonResult.orderedSame })
         
         XCTAssertEqual(descriptor.key, request.sort?.key)
         XCTAssertEqual(descriptor.ascending, request.sort?.ascending)

@@ -31,7 +31,7 @@ public struct DKMigrationFactory {
     }
 
     private func sortedModelFilesByVersionDesc() throws -> [String] {
-        let fileAndVersion = try models.files.flatMap { (file: String) -> (file: String, version: Int)? in
+        let fileAndVersion = try models.files.compactMap { (file: String) -> (file: String, version: Int)? in
             let modelFile = URL(fileURLWithPath: file)
             let version = try self.versionPolicy.version(modelUrl: modelFile)
             return (file: file, version: version)

@@ -16,7 +16,7 @@ class DKProgressiveStoreLoaderTests: XCTestCase {
         
         let loader = DKProgressiveStoreLoader(models: models)
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: models.model(name: "Model 2"))
-        try loader.append(store: dbUrl, ofType: NSSQLiteStoreType, to: coordinator)
+        _ = try loader.append(store: dbUrl, ofType: NSSQLiteStoreType, to: coordinator)
         let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         context.persistentStoreCoordinator = coordinator
 
@@ -39,7 +39,7 @@ class DKProgressiveStoreLoaderTests: XCTestCase {
 
         let loader = DKProgressiveStoreLoader(models: models)
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: try models.currentModel())
-        try loader.append(store: dbUrl, ofType: NSSQLiteStoreType, to: coordinator)
+        _ = try loader.append(store: dbUrl, ofType: NSSQLiteStoreType, to: coordinator)
         let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         context.persistentStoreCoordinator = coordinator
 
